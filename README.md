@@ -1,23 +1,20 @@
-# `lightsaber` - A Rust toolkit
+# Lightsaber: A Rust toolkit
 
 ## Description
 
-Lightsaber is a simple Rust toolkit for bootstrapping a new Rust project. It includes:
+Lightsaber is a Rust toolkit for bootstrapping a new Rust project. It includes:
 
-By default, enhanced runtime error handling (`eyre`) and logging (`tracing`) is included. 
-
-For project-specific dependencies, `Cargo.toml` has a list of popular packages to use depending on the use case.
-
-- 📦 Always nice-to-have and project-specific packages
+- 📦 Packages that are always nice-to-have and project-specific packages. For
+  more information, see [`Cargo.toml`](./Cargo.toml)
 - 🚨 Opinionated and strict `clippy` linting
 
-## Lint in `watch` mode
+## A usual workflow
 
 ```sh
-# Install background check
+# Ensure you have installed background check tool
 cargo install bacon
 
-# Lint and watch
+# Lint and watch whilst developing
 bacon clippy
 ```
 
