@@ -18,3 +18,12 @@ cargo install bacon
 bacon clippy
 ```
 
+## Library or binary 
+
+Depending on the usecase, you'll likely develop either a binary or a library.
+
+If what you are creating will be an executable, you'll need to delete [`src/main.rs`](/src/main.rs).
+If what you are creating will be a library, you'll need to delete [`src/lib.rs`](/src/lib.rs).
+
+Make sure that the `clippy` configuration is added in the base file that remains.
+
